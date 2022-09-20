@@ -1,0 +1,32 @@
+import 'package:flutter/material.dart';
+
+class soal3 extends StatelessWidget {
+  const soal3({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 92, 92, 92),
+        leading: FlutterLogo(
+          size: 20,
+        ),
+        title: Text("ANAK AYAM"),
+        centerTitle: false,
+        actions: [
+          IconButton(
+              onPressed: () {
+                print("klik more");
+              },
+              icon: Icon(Icons.more_vert))
+        ],
+      ),
+      body: Center(
+          child: FlutterLogo(
+        size: 200,
+      )),
+    );
+  }
+}
